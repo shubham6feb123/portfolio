@@ -3,21 +3,41 @@
     bottom: 54px;
     /* left: 263px; */
     /* right: 29%; */
-    right: 30%;
-    background-color: #0d7afd87;
-    backdrop-filter: invert(1);
+    right: 31%;
+    background-color: #e0e6ec4a;
+    backdrop-filter: blur(5px);
     width: 339px;
     height: 200px;
     border-radius: 6px;
     transform: translateY(142%);
     transition: transform 1s ease;
     z-index: -1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 68px;
+    padding: 14px 21px;
 }
 
 .showNavBox{
-    background-color: #0d7afd87;
-    backdrop-filter: invert(1);
+    background-color: #e0e6ec4a;
+    backdrop-filter: blur(5px);
     transform: translateY(0);
-    z-index: 101;
+    z-index: 100;
     /* cursor: pointer; */
+    
+}
+
+.icon{
+    height: fit-content;
+    height: fit-content;
+    padding: 3px;
+    background: #961d5f63;
+    border-radius: 4px;
+    backdrop-filter: blur(23px);
+    text-align: center;
+}
+
+.navBox div a img{
+    width: 31px;
+    border-radius: 41px;
 }

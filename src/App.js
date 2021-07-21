@@ -6,14 +6,20 @@ import Nav from "./components/NavComp/nav";
 import Home from "./components/HomeComp/Home";
 
 
+//routing
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+
+
 function App() {
   return (
     <div className="app">
-      {/* <video className="background_video" autoPlay muted>
-  <source src="./video/video.webm" type="video/webm"/>
-   </video> */}
+    <Router>
+      <Switch>
+        <Route to="/">
       <Home/>
-      {/* <Nav/> */}
+      </Route>
+      </Switch>
+      </Router>
     </div>
   )
 }
