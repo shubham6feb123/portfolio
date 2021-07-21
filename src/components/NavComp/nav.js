@@ -1,9 +1,12 @@
 import React from 'react'
+import './nav.css'
 
 function Nav() {
     return (
         <div className="nav">
-            nav navbar
+            <div className="nav__icon">
+                <img src="./image/windows-11.svg" alt="nav-icon"/>
+            </div>
         </div>
     )
 }
