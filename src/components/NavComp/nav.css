@@ -6,27 +6,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2px 0 6px 0;
+    /* padding: 0px 0 8px 0; */
     background: #ffffff54;
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(5px);
     border: 2px solid #ffffff2b;
+    border-bottom: 0px;
 }
 
 .nav>.nav__icon{
-    height: 47px;
+    height: 33px;
+    width: 90px;
     text-align: center;
-    cursor: pointer;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6px;
 }
 
 .nav>.nav__icon>img{
-    width: 53%;
+    width: 46%;
+    cursor: pointer;
 }
 
-.nav>.nav__icon:hover img{
+.nav>.nav__icon > img:hover{
     width: 55px;
-    transition: width 0.1s ease;
+    transition: width 0.2s ease;
 }
 
