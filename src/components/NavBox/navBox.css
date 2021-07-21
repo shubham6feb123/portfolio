@@ -1,0 +1,21 @@
+.navBox{
+    position: absolute;
+    bottom: 54px;
+    /* left: 263px; */
+    /* right: 29%; */
+    right: 28%;
+    background-color: #0d7afd87;
+    backdrop-filter: invert(1);
+    width: 384px;
+    height: 200px;
+    border-radius: 6px;
+    transform: translateY(142%);
+    transition: transform 1s ease;
+    z-index: -1;
+}
+
+.showNavBox{
+    background-color: #0d7afd87;
+    backdrop-filter: invert(1);
+    transform: translateY(0);
+}
