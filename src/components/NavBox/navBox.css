@@ -16,6 +16,7 @@
     grid-template-columns: repeat(3,1fr);
     grid-gap: 68px;
     padding: 14px 21px;
+    border: 1px solid #ffffff29;
 }
 
 .showNavBox{
@@ -40,3 +41,4 @@
     width: 31px;
     border-radius: 41px;
 }
+
