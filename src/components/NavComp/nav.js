@@ -15,8 +15,9 @@ function Nav() {
             <div className="nav__icon">
                 <img src="./image/windows-11.svg" alt="nav-icon" onClick={showNavBox}/>
             </div>
+            <NavBox show={show}/>
         </div>
-        <NavBox show={show}/>
+        
        </> 
     )
 }
