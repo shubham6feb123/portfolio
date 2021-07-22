@@ -1,28 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./home.css";
+
+// background image
+import background from './window.jpg';
+import background2 from './background2.jpg';
 
 // components
 import Nav from "../NavComp/nav";
 import Portfolio from '../portfolio/Portfolio';
-import Login from '../login/Login';
-import Contact from '../login/contact/Contact';
+import User from '../user/User';
+import Contact from '../contact/Contact';
 
 //routing
-import {Route,Switch,useRouteMatch} from 'react-router-dom';
+import {Route,Switch} from 'react-router-dom';
 
 function Home() {
-    // console.log("use",useRouteMatch());
-    // const {path,url} = useRouteMatch();
+    const [backgrounds,setBackgrounds] = useState(false);
+    const changeBackground = ()=>{
+        setBackgrounds((prev)=>!prev);
+    }
     return (
-        <div className="home">
-        <img src="./image/window.jpg" alt="window"/>
+        <div className="home" style={{backgroundImage:`url(${backgrounds?background2:background})`}} onDoubleClick={changeBackground}>
+        {/* <img src="./image/window.jpg" alt="window"/> */}
         <Nav/>
         <Switch>
             <Route exact path='/' >
              <Portfolio/>
             </Route>
-            <Route exact path='/login'>
-             <Login/>
+            <Route exact path='/user'>
+             <User/>
             </Route>
             <Route exact path='/contact'>
              <Contact/>

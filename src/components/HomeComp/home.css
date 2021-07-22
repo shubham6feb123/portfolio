@@ -3,8 +3,16 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  /* background-image: url("./window.jpg"); */
+  background-position: top;
+  scroll-behavior: smooth;
 }
+
+.home::-webkit-scrollbar{
+  display: none;
+}
+
 
 .home>img{
 position: absolute;

@@ -28,7 +28,7 @@ function NavBox({show}) {
                 </Link>
             </div>
             <div className="icon">
-            <Link to="/login">
+            <Link to="/user">
                     <img src="./image/user-6.gif" alt="user"/>
                 </Link>
             </div>

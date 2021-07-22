@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 
 // components
-import Nav from "./components/NavComp/nav";
 import Home from "./components/HomeComp/Home";
 
 
