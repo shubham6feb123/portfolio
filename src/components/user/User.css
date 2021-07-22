@@ -26,8 +26,24 @@
     width: 100%;
     text-align: center;
     padding: 10px;
+    grid-gap: 20px;
 }
 
 .user__tabs__sign__in{
+    background: #ffffff00;
+    border-radius: 3px;
+    backdrop-filter: blur(9px);
+    padding: 5px;
+    cursor: pointer;
+}
 
+/* .user__tabs__sign__in:active{
+    background: #ffffff00;
+} */
+.user__tabs__sign__up{
+    background: #ffffff38;
+    border-radius: 3px;
+    backdrop-filter: blur(9px);
+    padding: 5px;
+    cursor: pointer;
 }
