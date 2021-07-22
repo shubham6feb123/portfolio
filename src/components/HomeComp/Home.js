@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./home.css";
 
 // background image
-import background from './window.jpg';
+import background1 from './window.jpg';
 import background2 from './background2.jpg';
 
 // components
@@ -20,8 +20,7 @@ function Home() {
         setBackgrounds((prev)=>!prev);
     }
     return (
-        <div className="home" style={{backgroundImage:`url(${backgrounds?background2:background})`}} onDoubleClick={changeBackground}>
-        {/* <img src="./image/window.jpg" alt="window"/> */}
+        <div className="home" style={{backgroundImage:`url(${backgrounds?background2:background1})`}} onDoubleClick={changeBackground}>
         <Nav/>
         <Switch>
             <Route exact path='/' >

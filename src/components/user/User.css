@@ -3,8 +3,31 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .user{
     padding: 0 0 3em 0;
+    width: 350px;
+    height: 67%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -52px;
+    background-color: #ffffff70;
+    backdrop-filter: blur(5px);
+    border-radius: 7px;
+    border: 1px solid #ffffff63;
+}
+
+.user__tabs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.user__tabs__sign__in{
+
 }
