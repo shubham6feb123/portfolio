@@ -5,7 +5,8 @@ import {Link} from 'react-router-dom';
 function NavBox({show}) {
      return (
          <>
-        <div className={show?'navBox showNavBox':'navBox'}>
+         <div className={show?'navBoxWrapper showNavBox ':'navBoxWrapper'}>
+        <div className='navBox'>
             <div className="icon">
                 <Link to="/">
                     <img src="./image/portfolio.png" alt="portfolio"/>
@@ -40,8 +41,11 @@ function NavBox({show}) {
             {/* <div className="icon__3">hai</div>
             <div className="icon__4">bahi ji</div> */}
         </div>
+        </div>
         </>
     )
 }
 
 export default NavBox
+
+// className={show?'navBox showNavBox':'navBox'}

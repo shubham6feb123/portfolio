@@ -1,16 +1,14 @@
 .navBox{
-    position: absolute;
+    /* position: absolute;
     bottom: 54px;
-    /* left: 263px; */
-    /* right: 29%; */
-    right: 31%;
+    right: 31%; */
     background-color: #e0e6ec4a;
     backdrop-filter: blur(5px);
     width: 339px;
     height: 200px;
     border-radius: 6px;
-    transform: translateY(142%);
-    transition: transform 1s ease;
+    /* transform: translateY(142%);
+    transition: transform 1s ease; */
     z-index: -2;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -20,10 +18,10 @@
 }
 
 .showNavBox{
-    background-color: #e0e6ec4a;
-    backdrop-filter: blur(5px);
-    transform: translateY(0);
-    /* cursor: pointer; */
+    /* background-color: #e0e6ec4a;
+    backdrop-filter: blur(5px); */
+    transform: translateY(0) !important;
+   
     
 }
 
@@ -41,4 +39,20 @@
     width: 31px;
     border-radius: 41px;
 }
+
+
+
+/* navwrapper */
+
+    .navBoxWrapper{position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 123%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(139%);
+    transition: transform 1s ease;
+}
+
 
