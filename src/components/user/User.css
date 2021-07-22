@@ -35,15 +35,21 @@
     backdrop-filter: blur(9px);
     padding: 5px;
     cursor: pointer;
+    border: 1px solid #ffffff8f;
 }
 
-/* .user__tabs__sign__in:active{
+.user__tabs__sign__in:active{
     background: #ffffff00;
-} */
+}
 .user__tabs__sign__up{
     background: #ffffff38;
     border-radius: 3px;
     backdrop-filter: blur(9px);
     padding: 5px;
     cursor: pointer;
+}
+
+.user__tabs__sign__in:hover,.user__tabs__sign__up:hover{
+    background: #187ffe2e;
+    transition: background 0.5s ease;
 }
