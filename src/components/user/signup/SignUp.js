@@ -16,8 +16,9 @@ function SignUp() {
     //   setShow((prev)=>!prev)
     // }
     return (
-        <div className="sign__up">
-            <AuthForm email={true}/>
+        <>
+       
+            <AuthForm email={true} signUp={true}/>
            {/* <div className="username">
                <div className="username__img">
                 <img src={man} alt="username"/>   
@@ -39,7 +40,8 @@ function SignUp() {
                <img src={showpass} alt="show" onClick={showPassword}/>
                </div>
            </div> */}
-        </div>
+ 
+        </>
     )
 }
 

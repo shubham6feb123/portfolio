@@ -7,7 +7,7 @@ import Email from '../signup/email.png'
 import lock from '../signup/lock.png'
 import showpass from '../signup/showpass.gif'
 
-function AuthForm({email}) {
+function AuthForm({email,signUp}) {
     const [show,setShow] = useState(false)
     const showPassword = ()=>{
       setShow((prev)=>!prev)
@@ -34,6 +34,9 @@ function AuthForm({email}) {
                <div className="showpassword__img">
                <img src={showpass} alt="show" onClick={showPassword}/>
                </div>
+           </div>
+           <div className="submit">
+               <button type="submit">{signUp?"Sign Up":"Sign In"}</button>
            </div>
         </div>
     )
