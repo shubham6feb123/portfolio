@@ -4,7 +4,8 @@ import './signUp.css'
 function SignUp() {
     return (
         <div className="sign__up">
-            sign up kr lo
+            <label>UserName</label>
+            <input/>
         </div>
     )
 }

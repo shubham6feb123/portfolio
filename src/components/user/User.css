@@ -29,24 +29,23 @@
     grid-gap: 20px;
 }
 
-.user__tabs__sign__in{
-    background: #ffffff00;
+.user__tabs__sign__in , .user__tabs__sign__up{
+    /* background: #ffffff00; */
     border-radius: 3px;
     backdrop-filter: blur(9px);
     padding: 5px;
     cursor: pointer;
-    border: 1px solid #ffffff8f;
+    border: 1px solid #ffffff;;
 }
 
-.user__tabs__sign__in:active{
-    background: #ffffff00;
-}
+
 .user__tabs__sign__up{
-    background: #ffffff38;
+    /* background: #ffffff38; */
     border-radius: 3px;
     backdrop-filter: blur(9px);
     padding: 5px;
     cursor: pointer;
+    border: none;
 }
 
 .user__tabs__sign__in:hover,.user__tabs__sign__up:hover{
