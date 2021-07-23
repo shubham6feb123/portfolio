@@ -6,3 +6,47 @@
     margin-top: 20px;
     padding: 20px 30px;
 }
+
+.username ,.email , .password{
+    border-radius: 2px;
+    background: #ffffff30;
+    /* padding: 8px 0px; */
+    margin-bottom: 36px;
+    height: 40px;
+    backdrop-filter: blur(25px);
+    display: flex;
+    align-items: center;
+}
+
+.email{
+   
+}
+
+.password{
+
+}
+
+.username__img , .email__img, .password__img, .showpassword__img{
+    height:100%;
+    width:12%;
+    background-color: #0b5cef57;
+    display: flex;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+}
+
+input{
+    height: 100%;
+    padding: 0 0 0 20px;
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+.showpassword__img>img{
+    height:100%;
+    cursor: pointer;
+}
