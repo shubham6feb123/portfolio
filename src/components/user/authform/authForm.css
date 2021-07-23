@@ -40,6 +40,10 @@ input{
     background: transparent;
 }
 
+.showpassword__img{
+    margin:  0 0 0 9px;
+}
+
 .showpassword__img>img{
     height:100%;
     cursor: pointer;
@@ -60,4 +64,8 @@ input{
     border: 2px solid white;
     cursor: pointer;
     outline: none;
+}
+
+.submit>button:hover{
+    background: #6d8af29e;
 }
