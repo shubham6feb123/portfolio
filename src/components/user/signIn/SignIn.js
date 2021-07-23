@@ -1,10 +1,13 @@
 import React from 'react';
 import './signIn.css'
 
+//componenet
+import AuthForm from '../authform/AuthForm'
+
 function SignIn() {
     return (
         <div className="sign__in">
-            sign ho rhe h
+            <AuthForm email={false}/>
         </div>
     )
 }

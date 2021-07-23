@@ -1,4 +1,4 @@
-/* .sign__up{
+.auth__form{
     width: 100%;
     height: 100%;
     display: flex;
@@ -10,6 +10,7 @@
 .username ,.email , .password{
     border-radius: 2px;
     background: #ffffff30;
+    /* padding: 8px 0px; */
     margin-bottom: 36px;
     height: 40px;
     backdrop-filter: blur(25px);
@@ -37,9 +38,10 @@ input{
     flex: 1;
     border: none;
     outline: none;
+    background: transparent;
 }
 
 .showpassword__img>img{
     height:100%;
     cursor: pointer;
-} */
+}
