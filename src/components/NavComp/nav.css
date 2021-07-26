@@ -35,3 +35,10 @@
     transition: width 0.2s ease;
 }
 
+/* mediaquery */
+@media screen and (max-width:800px){
+    .nav>.nav__icon > img:hover{
+        width: 46%;
+        transition: width 0.2s ease;
+    }
+}
