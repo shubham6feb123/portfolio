@@ -16,7 +16,7 @@ import Blog from '../Blog/Blog';
 import {Route,Switch,Redirect} from 'react-router-dom';
 
 
-const isAuth = true;
+const isAuth = false;
 function Home() {
     const [backgrounds,setBackgrounds] = useState(false);
     const changeBackground = ()=>{
