@@ -25,7 +25,7 @@ function User() {
     },[authState])
     return (
         <div className="user__wrapper">
-            <div className="user">
+            <div className="user" style={authState=="Sign In"?{height:'320px'}:{height:'400px'}}>
                 <div className="user__tabs">
                     <div className="user__tabs__sign__in" onClick={userAuthAction} ref={signInTabColor}>Sign In</div>
                     <div className="user__tabs__sign__up" onClick={userAuthAction} ref={signUpTabColor}>Sign Up</div>

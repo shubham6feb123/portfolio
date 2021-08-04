@@ -31,11 +31,9 @@ console.log(e.target.name);
     console.log(user)
 
     //sending userDetails
-const sendDetails=()=>{
-    user.emailAddress.replace("with","tutorial")
-    user.username.replace("with","tutorial")
-    user.password.replace("with","tutorial")
+const sendDetails=(e)=>{
     console.log("sending",user)
+    console.log(e.target.innerText)
 }
 
     return (
