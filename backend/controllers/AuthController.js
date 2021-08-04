@@ -5,8 +5,6 @@ res.send("Hello user")
 
 const SignIn = ()=>{
 
-
-
 }
 
 module.exports = {SignUp,SignIn};
