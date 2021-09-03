@@ -10,6 +10,6 @@ app.use(express.json());
 fs.readdirSync('./routes').map(r=>{app.use('/api',require("./routes/"+r))});
 
 app.listen(5000,()=>{
-    console.log("server is listening on port 5000")
+    console.log("server is listening on port 5000");
 });
 
