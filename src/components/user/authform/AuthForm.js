@@ -7,60 +7,64 @@ import Email from '../signup/email.png'
 import lock from '../signup/lock.png'
 import showpass from '../signup/showpass.gif'
 
-function AuthForm({email,signUp}) {
-    const [show,setShow] = useState(false);
-    const [user,setUser] = useState({
-        username:"",
-        emailAddress:"",
-        password:""
+//apiFunctions
+import {signUpRequest} from '../../../ApiFunctions/AuthApi';
+
+function AuthForm({ email, signUp }) {
+    const [show, setShow] = useState(false);
+    const [user, setUser] = useState({
+        username: "",
+        emailAddress: "",
+        password: ""
     })
 
     //hide and show password 
-    const showPassword = ()=>{
-      setShow((prev)=>!prev)
+    const showPassword = () => {
+        setShow((prev) => !prev)
     }
 
     //saving userDetails 
-    let name,value;
-    const userDetails = (e)=>{
-     name = e.target.name;
-     value = e.target.value;
-    setUser((prev)=>({...prev,[name]:value}));
+    let name, value;
+    const userDetails = (e) => {
+        name = e.target.name;
+        value = e.target.value;
+        setUser((prev) => ({ ...prev, [name]: value }));
     }
 
 
     //sending userDetails
-const sendDetails=(e)=>{
-    console.log("sending",user)
-    console.log(e.target.innerText)
-}
+    const sendDetails = (e) => {
+        console.log("sending", user)
+        console.log(e.target.innerText)
+        signUpRequest().then(res => console.log("api", res)).catch(err => console.log(err));
+    }
 
     return (
         <div className="auth__form">
-           <div className="username">
-               <div className="username__img">
-                <img src={man} alt="username"/>   
+            <div className="username">
+                <div className="username__img">
+                    <img src={man} alt="username" />
                 </div>
-                <input type="text" name="username" placeholder="username" onChange={userDetails}/>
-               </div>
-          {email? <div className="email">
-               <div className="email__img">
-               <img src={Email} alt="email"/>  
-               </div>
-               <input type="email" name="emailAddress" placeholder="email" onChange={userDetails}/>
-           </div>:''}
-           <div className="password">
-               <div className="password__img">
-               <img src={lock} alt="password"/>
-               </div>
-               <input type={show?"text":"password"} name="password" placeholder="password" onChange={userDetails}/>
-               <div className="showpassword__img">
-               <img src={showpass} alt="show" onClick={showPassword}/>
-               </div>
-           </div>
-           <div className="submit">
-               <button type="submit" onClick={sendDetails}>{signUp?"Sign Up":"Sign In"}</button>
-           </div>
+                <input type="text" name="username" placeholder="username" onChange={userDetails} />
+            </div>
+            {email ? <div className="email">
+                <div className="email__img">
+                    <img src={Email} alt="email" />
+                </div>
+                <input type="email" name="emailAddress" placeholder="email" onChange={userDetails} />
+            </div> : ''}
+            <div className="password">
+                <div className="password__img">
+                    <img src={lock} alt="password" />
+                </div>
+                <input type={show ? "text" : "password"} name="password" placeholder="password" onChange={userDetails} />
+                <div className="showpassword__img">
+                    <img src={showpass} alt="show" onClick={showPassword} />
+                </div>
+            </div>
+            <div className="submit">
+                <button type="submit" onClick={sendDetails}>{signUp ? "Sign Up" : "Sign In"}</button>
+            </div>
         </div>
     )
 }
