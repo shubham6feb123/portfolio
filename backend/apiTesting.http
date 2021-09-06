@@ -1,8 +1,0 @@
-POST https://3000-harlequin-spider-kxbpk3ie.ws-us14.gitpod.io/api/signup
-content-type: application/json
-
-{
-    "username": "sample",
-    "email": "Wed, 21 Oct 2015 18:27:50 GMT",
-    "password":"bjhjhb"
-}

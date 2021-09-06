@@ -25,10 +25,9 @@ function AuthForm({email,signUp}) {
     const userDetails = (e)=>{
      name = e.target.name;
      value = e.target.value;
-console.log(e.target.name);
     setUser((prev)=>({...prev,[name]:value}));
     }
-    console.log(user)
+
 
     //sending userDetails
 const sendDetails=(e)=>{
