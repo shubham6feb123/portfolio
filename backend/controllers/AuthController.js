@@ -1,5 +1,6 @@
 const SignUp = (req,res)=>{
-    // const {username,email,password} = req.body;
+    const {username,email,password} = req.body;
+    console.log(req.body);
 res.json({
     status:"Ok"
 })

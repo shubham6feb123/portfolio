@@ -36,7 +36,7 @@ function AuthForm({ email, signUp }) {
     const sendDetails = (e) => {
         console.log("sending", user)
         console.log(e.target.innerText)
-        signUpRequest().then(res => console.log("api", res)).catch(err => console.log(err));
+        signUpRequest(user.username,user.emailAddress,user.password).then(res => console.log("api", res)).catch(err => console.log(err));
     }
 
     return (
