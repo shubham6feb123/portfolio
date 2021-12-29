@@ -8,7 +8,7 @@ import lock from "../signup/lock.png";
 import showpass from "../signup/showpass.gif";
 
 //apiFunctions
-import { signUpRequest } from "../../../ApiFunctions/AuthApi";
+import { signUpRequest,signInRequest } from "../../../ApiFunctions/AuthApi";
 
 function AuthForm({ email, signUp }) {
   const [show, setShow] = useState(false);
@@ -37,8 +37,16 @@ function AuthForm({ email, signUp }) {
     console.log(e.target.innerText);
     if (e.target.innerText === "Sign Up") {
       signUpRequest(user.username, user.emailAddress, user.password)
-        .then((res) => console.log("api", res))
-        .catch((err) => console.log(err));
+        .then((res) => {
+          console.log("api", res)
+      })
+        .catch((err) => console.log("signup error",err));
+    }else{
+      signInRequest(user.username, user.password)
+        .then((res) => {
+          console.log("api sign in", res)
+      })
+        .catch((err) => console.log("signin error",err));
     }
   };
 
