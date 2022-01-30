@@ -9,12 +9,6 @@ dotenv.config({path:'./config.env'});
 //mongoDb connection
 connectToMongodb();
 
-//cors options
-// const corsOptions = {
-//     origin: 'https://5000-salmon-marmoset-khsapgrk.ws-us15.gitpod.io',
-//     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-//   }
-
 //express middlewares
 app.use(cors());
 app.use(express.json());
