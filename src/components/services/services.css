@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&family=Ubuntu&display=swap");
+.services_container{
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+
+}
+
+.services_container::-webkit-scrollbar{
+    display: none;
+}
+
+.services{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 100%;
+    background-color: #e0e6ec47;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(1px);
+    width: 90%;
+    border-radius: 5px;
+    position: relative;
+    scroll-snap-align: start;
+    margin:10px auto
+}
+
+.services h3{
+    font-family: "Sacramento", cursive;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    font-weight: 400;
+
+}
+
+.services_banner_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 10px;
+    margin-top: 2em;
+}
+
+.services_card{
+    background-color: #e0e6ec47;
+    -webkit-backdrop-filter: blur(1px);
+    border: 2px solid #ffffff2b;
+    width: 15em;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+.services_card h5{
+    font-family: "Sacramento", cursive;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+.services_card .img_container{
+   text-align: center;
+   padding: 5px 0px 3px 0px;
+    
+}
+
+.img_container img{
+    width: 95%;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:599px) {
+  .services_banner_container{
+    justify-content: center;
+  }
+
+  .services h3{
+    font-size: 2em;
+  }
+}

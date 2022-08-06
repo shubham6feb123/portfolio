@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&family=Ubuntu&display=swap");
+.portfolio_container {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-padding: 10px;
+}
+
+.portfolio_container::-webkit-scrollbar {
+  display: none;
+}
+
+.portfolio_container .portfolio_overview {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-height: 100%;
+  background-color: #e0e6ec47;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  width: 90%;
+  border-radius: 5px;
+  position: relative;
+  scroll-snap-align: start;
+}
+
+.image_box {
+  text-align: center;
+  padding: 11px;
+}
+
+.image_box > img {
+  width: 28%;
+  border-radius: 50%;
+  border: 2px solid white;
+  border-style: dashed;
+}
+
+.image_box img {
+  animation: rotate 20s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.image_box h3 {
+  font-size: 5rem;
+  margin-bottom: 38px;
+  margin-top: 9px;
+  color: white;
+  font-family: "Sacramento", cursive;
+  font-weight: 500;
+}
+
+.about_me {
+  position: relative;
+  top: 13%;
+  left: 12%;
+  width: 80%;
+  height: 41%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* my skills */
+.my_skills,
+.projects {
+  flex-direction: column;
+  justify-content: flex-start !important;
+  align-items: center !important;
+}
+
+.my_skills {
+  min-height: 43% !important;
+}
+
+.my_skills h3,
+.projects h3 {
+  padding: 12px;
+  font-weight: 100;
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-align: center;
+  font-family: "Sacramento", cursive;
+}
+
+.skills_logo_container,
+.projects_container {
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  height: 77%;
+  width: 100%;
+  margin: auto;
+}
+
+.skills_logo_container {
+  flex-wrap: nowrap !important;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.skills_logo_container::-webkit-scrollbar {
+  display: none;
+}
+
+.skills:hover {
+  transform: rotateZ(360deg);
+  transition: 2s;
+}
+
+.skills {
+  margin: 0.5em;
+  width: 4em;
+  height: 4em;
+  animation: cloud 2s ease-in-out infinite alternate-reverse both;
+}
+
+.skills_logo_card {
+  border-radius: 50%;
+  background-color: #e0e6ec47;
+  border: 2px solid #ffffff2b;
+  overflow: hidden;
+  min-width: 6em;
+  min-height: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  scroll-snap-align: start;
+}
+
+code {
+  font-family: "Sacramento", cursive;
+  color: white;
+  font-size: 2rem;
+}
+
+code span {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.cloud1 {
+  top: -1rem;
+  left: 3rem;
+}
+.cloud2 {
+  left: 11rem;
+  bottom: 1rem;
+}
+.cloud3 {
+  right: 1rem;
+  top: 2rem;
+}
+
+.cloud {
+  width: 176px;
+  position: absolute;
+  animation: cloud 2s ease-in-out infinite alternate-reverse both;
+}
+
+.projects_container {
+  padding: 0px 10px;
+  justify-content: center;
+}
+
+.projects_card {
+  background-color: #e0e6ec47;
+  padding: 32px;
+  background-color: #e0e6ec47;
+  -webkit-backdrop-filter: blur(5px);
+  text-align: center;
+  min-width: 20%;
+  border-radius: 8px;
+  animation: cloud 2s ease-in-out infinite alternate-reverse both;
+  border: 2px solid #ffffff2b;
+}
+
+.projects_card:hover {
+  cursor: pointer;
+}
+
+.projects_card img {
+  width: 178px;
+  height: 254px;
+  border-radius: 15px;
+}
+
+.projects_card a {
+  text-align: center;
+  font-family: "Sacramento", cursive;
+  color: white;
+  font-weight: 600;
+  font-size: 1.4em;
+  margin: 6px 0px;
+  display: block;
+  text-decoration: underline;
+}
+
+.projects_card:hover a {
+  color: black;
+  transition: color 1s;
+}
+
+@keyframes cloud {
+  0% {
+    transform: translateY(10px);
+  }
+  /* 50%{
+    transform: translateY(0px);
+
+   }  */
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .cloud {
+    width: 11rem;
+  }
+
+  .cloud1 {
+    top: -2rem;
+    left: 1rem;
+  }
+
+  .cloud2 {
+    left: 3rem;
+    bottom: 0rem;
+  }
+
+  .cloud3 {
+    right: 0rem;
+    top: 5rem;
+  }
+
+  .portfolio_container .portfolio_overview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    height: 90%;
+  }
+
+  .image_box img {
+    width: 47%;
+  }
+
+  .image_box h3 {
+    font-size: 3.27rem;
+  }
+
+  .image_box code {
+    font-size: 1.31rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cloud {
+    width: 10rem;
+  }
+
+  .cloud1 {
+    top: -2rem;
+    left: 1rem;
+  }
+
+  .cloud2 {
+    left: -1rem;
+    bottom: 2rem;
+  }
+
+  .cloud3 {
+    right: -1rem;
+    top: 5rem;
+  }
+
+  .portfolio_container .portfolio_overview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    height: 90%;
+  }
+
+  .image_box img {
+    width: 40%;
+  }
+
+  .image_box h3 {
+    font-size: 3.27rem;
+  }
+
+  .image_box code {
+    font-size: 1.31rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cloud {
+    width: 8rem;
+  }
+
+  .cloud1 {
+    top: -2rem;
+    left: 1rem;
+  }
+
+  .cloud2 {
+    left: 5rem;
+    bottom: 2rem;
+  }
+
+  .cloud3 {
+    right: 0rem;
+    top: 5rem;
+  }
+
+  .portfolio_container .portfolio_overview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    height: 90%;
+  }
+
+  .image_box img {
+    width: 40%;
+  }
+
+  .image_box h3 {
+    font-size: 3.27rem;
+  }
+
+  .image_box code {
+    font-size: 1.31rem;
+  }
+  .my_skills h3,
+  .projects h3 {
+    font-size: 2em;
+  }
+}

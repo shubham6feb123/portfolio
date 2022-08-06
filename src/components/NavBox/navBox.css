@@ -1,0 +1,59 @@
+/* navBoxWrapper */
+
+.navBoxWrapper{position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 123%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(139%);
+    transition: transform 1s ease;
+    z-index: -2;
+}
+
+.navBox{
+    background-color: #e0e6ec78;
+    backdrop-filter: blur(5px);
+    width: 339px;
+    height: 200px;
+    border-radius: 6px;
+    z-index: -2;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 68px;
+    padding: 14px 21px;
+    border: 1px solid #ffffff29;
+}
+
+.showNavBox{
+    transform: translateY(0) !important;  
+}
+
+.icon{
+    height: fit-content;
+    height: fit-content;
+    padding: 3px;
+    background: #961d5f63;
+    border-radius: 4px;
+    backdrop-filter: blur(23px);
+    text-align: center;
+}
+
+.icon:hover{
+   background-color: #961d5f73;
+}
+
+.navBox div a img{
+    width: 31px;
+    border-radius: 41px;
+}
+
+
+
+
+
+
+/* background-color: #e0e6ec78; */
+
+/* original  background-color: #e0e6ec4a; */

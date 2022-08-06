@@ -1,0 +1,13 @@
+.home{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-position: top;
+  /* scroll-snap-type: y mandatory; */
+}
+
+.home::-webkit-scrollbar{
+  display: none;
+}
+

@@ -1,0 +1,59 @@
+.user__wrapper{
+    width: 100%;
+    min-height: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: overlay;
+}
+
+.user{
+    padding: 0 0 3em 0;
+    width: 22em;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: -85px; */
+    position: relative;
+    /* top: -61px; */
+    background-color: #ffffff70;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 7px;
+    border: 2px solid #ffffff63;
+    margin: 90px auto 50px auto;
+}
+
+.user__tabs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    grid-gap: 20px;
+}
+
+.user__tabs__sign__in , .user__tabs__sign__up{
+    /* background: #ffffff00; */
+    border-radius: 3px;
+    backdrop-filter: blur(9px);
+    padding: 5px;
+    cursor: pointer;
+    border: 2px solid #ffffff;;
+}
+
+
+.user__tabs__sign__up{
+    /* background: #ffffff38; */
+    border-radius: 3px;
+    backdrop-filter: blur(9px);
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.user__tabs__sign__in:hover,.user__tabs__sign__up:hover{
+    background: #187ffe2e;
+    transition: background 0.5s ease;
+}
