@@ -23,8 +23,8 @@ function NavBox({ show }) {
             </Link>
           </div>
           <div className="icon">
-            <Link to="contact">
-              <img src="./image/contact.png" alt="blog" />
+            <Link to="/">
+              <img src="./image/resume.png" alt="resume" />
             </Link>
           </div>
           {/* <div className="icon">

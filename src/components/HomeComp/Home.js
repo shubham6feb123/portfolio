@@ -9,7 +9,6 @@ import background2 from "./background2.jpg";
 import Nav from "../NavComp/nav";
 import Portfolio from "../portfolio/Portfolio";
 // import User from "../user/User";
-import Contact from "../contact/Contact";
 import Blog from "../Blog/Blog";
 
 import Snowfall from "react-snowfall";
@@ -41,7 +40,7 @@ function Home() {
       <Routes>
         <Route path="/" element={<Portfolio />} />
 
-        <Route path="contact" element={<Contact />} />
+        {/* <Route path="/" element={<Contact />} /> */}
 
         <Route path="blog" element={<Blog />} />
 

@@ -84,6 +84,40 @@ const projectCard = (title, link, src) => {
   );
 };
 
+const About = () => {
+  return (
+    <div className="portfolio_overview about">
+      <h3>About Me</h3>
+      <div className="container">
+        <div className="img_box">
+          <img src="./image/shubham.jpg" alt="shubham" />
+        </div>
+        <div className="about_content_box">
+          <p>
+            Hi I am{" "}
+            <span
+              style={{
+                textDecoration: "underline",
+                textDecorationStyle: "solid",
+                color: "white",
+              }}
+            >
+              Shubham Sharma
+            </span>{" "}
+            full stack developer and freelancer living in Gwalior, 🇮🇳 India. I
+            ❤️ love writing code and I am currently pursuing B.Tech from MITS
+            Gwalior. I have been working in this field from last 1.5 years and
+            have done couple of projects as samples for my portfolio. I am also
+            🎯 open for all the internships that help me grow as well as learn
+            something new for the future. I am also available for the remote
+            work and will be glad if provided the opportunity to work.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const myProjects = () => {
   return (
     <div className="projects portfolio_overview">
@@ -95,6 +129,11 @@ const myProjects = () => {
           "https://shubham-flipshop.herokuapp.com",
           "./image/ecommerce.jpeg"
         )}
+        {projectCard(
+          "Disney+ Clone",
+          "https://disneyplus-750b9.firebaseapp.com/",
+          "./image/disneyplusclone.jpeg"
+        )}
       </div>
     </div>
   );
@@ -105,7 +144,7 @@ function Portfolio() {
     <>
       <div className="portfolio_container">
         {portfolioOverview()}
-        {portfolioOverview()}
+        {About()}
         {Myskills()}
         {myProjects()}
       </div>

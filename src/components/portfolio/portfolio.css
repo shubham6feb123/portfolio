@@ -37,8 +37,9 @@
 .image_box > img {
   width: 28%;
   border-radius: 50%;
-  border: 2px solid white;
-  border-style: dashed;
+  background-color: #e0e6ec47;
+  border: 2px solid #ffffff2b;
+  padding: 5px;
 }
 
 .image_box img {
@@ -64,13 +65,55 @@
   font-weight: 500;
 }
 
-.about_me {
-  position: relative;
-  top: 13%;
-  left: 12%;
-  width: 80%;
-  height: 41%;
-  font-family: "Ubuntu", sans-serif;
+.about {
+  display: block !important;
+}
+
+.about .container {
+  /* margin: 1em 0px 0px 0px; */
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .container .about_content_box {
+  width: 100%;
+  padding: 0.3em;
+  text-align: center;
+  margin: 3em 0em 0em;
+}
+
+.about .container .about_content_box p {
+  color: black;
+  font-family: "Sacramento", cursive;
+  font-size: 1.9em;
+}
+
+.about div .img_box {
+  padding: 0.3em;
+  background-color: #e0e6ec47;
+  border: 2px solid #ffffff2b;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.about h3 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 500;
+  color: white;
+  font-family: "Sacramento", cursive;
+}
+
+.about div .img_box img {
+  border-radius: 50%;
+  width: 10em;
 }
 
 /* my skills */
@@ -96,8 +139,7 @@
   font-family: "Sacramento", cursive;
 }
 
-.skills_logo_container,
-.projects_container {
+.skills_logo_container {
   position: relative;
   justify-content: space-between;
   align-items: center;
@@ -175,20 +217,26 @@ code span {
 }
 
 .projects_container {
-  padding: 0px 10px;
-  justify-content: center;
+  overflow-x: scroll;
+  width: 100%;
+  display: flex;
+  margin: 50px 0px;
+}
+
+.projects_container::-webkit-scrollbar {
+  display: none;
 }
 
 .projects_card {
   background-color: #e0e6ec47;
   padding: 32px;
   background-color: #e0e6ec47;
-  -webkit-backdrop-filter: blur(5px);
+  /* -webkit-backdrop-filter: blur(1px); */
   text-align: center;
-  min-width: 20%;
   border-radius: 8px;
   animation: cloud 2s ease-in-out infinite alternate-reverse both;
   border: 2px solid #ffffff2b;
+  margin: 10px 20px;
 }
 
 .projects_card:hover {
@@ -227,6 +275,25 @@ code span {
    }  */
   100% {
     transform: translateY(-10px);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .about .container .about_content_box {
+    margin: 0em 0em 0em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about .container .about_content_box {
+    text-align: justify;
+  }
+  .about .container {
+    padding: 0px;
+  }
+
+  .about .container .about_content_box p {
+    font-size: 1.6em;
   }
 }
 
@@ -354,5 +421,28 @@ code span {
   .my_skills h3,
   .projects h3 {
     font-size: 2em;
+  }
+
+  .about .container {
+    /* margin: 1em 0px 0px 0px; */
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about .container .about_content_box {
+    width: 100%;
+    margin: 1em 0px;
+    /* padding: 0.3em; */
+    text-align: justify;
+  }
+
+  .about .container .about_content_box p {
+    color: black;
+    font-family: "Sacramento", cursive;
+    font-size: 1.4em;
   }
 }
