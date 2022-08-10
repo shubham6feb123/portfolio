@@ -23,9 +23,26 @@ function NavBox({ show }) {
             </Link>
           </div>
           <div className="icon">
-            <Link to="/">
-              <img src="./image/resume.png" alt="resume" />
-            </Link>
+            <a
+              href="https://www.linkedin.com/in/shubham-sharma-400a29203/"
+              target="_blank"
+            >
+              <img src="./image/link.gif" alt="linkedin" />
+            </a>
+          </div>
+          <div className="icon">
+            {/* <Link to="/"> */}
+            <a href="mailto: maarahuls555@gmail.com" target="_blank">
+              <img src="./image/gmail.gif" alt="gamil" />
+            </a>
+            {/* </Link> */}
+          </div>
+          <div className="icon">
+            {/* <Link to="/"> */}
+            <a href="https://github.com/shubham6feb123" target="_blank">
+              <img src="./image/github.gif" alt="github" />
+            </a>
+            {/* </Link> */}
           </div>
           {/* <div className="icon">
             <Link to="user">
