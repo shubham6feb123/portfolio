@@ -13,9 +13,9 @@ function NavBox({ show }) {
             </Link>
           </div>
           <div className="icon">
-            <Link to="services">
-              <img src="./image/services.png" alt="services" />
-            </Link>
+            <a href="./Shubham Sharma Resume.pdf" download>
+              <img src="./image/resume.png" alt="My Resume" />
+            </a>
           </div>
           <div className="icon">
             <Link to="blog">
